@@ -1,6 +1,5 @@
 "use strict";
 
-"use strict";
 
 const formControl = document.querySelector("#email-form");
 
