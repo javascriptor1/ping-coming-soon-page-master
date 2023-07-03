@@ -1,6 +1,5 @@
 "use strict";
 
-
 const formControl = document.querySelector("#email-form");
 
 formControl.addEventListener("submit", function (e) {
@@ -10,6 +9,11 @@ formControl.addEventListener("submit", function (e) {
 });
 
 function validateEmail(email_id) {
+  if (email_id === "" || email_id === null) {
+    alert("Email field cannot be empty!. 🚫");
+    return;
+  }
+
   const regex_pattern =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
