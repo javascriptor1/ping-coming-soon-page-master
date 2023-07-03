@@ -17,3 +17,7 @@
   background-color: #4f7df3;
   fill: white;
 }
+
+.error-border{
+  border: 2px solid hsl(354, 100%, 66%);
+}

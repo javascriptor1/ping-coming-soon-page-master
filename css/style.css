@@ -554,6 +554,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -621,6 +625,16 @@ video {
   padding-right: 4rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -638,6 +652,10 @@ video {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -645,6 +663,11 @@ video {
 
 .text-\[0\.875rem\] {
   font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -676,6 +699,11 @@ video {
 .text-Gray {
   --tw-text-opacity: 1;
   color: hsl(0 0% 59% / var(--tw-text-opacity));
+}
+
+.text-LightRed {
+  --tw-text-opacity: 1;
+  color: hsl(354 100% 66% / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -716,6 +744,10 @@ video {
 .social-media-div:hover {
   background-color: #4f7df3;
   fill: white;
+}
+
+.error-border{
+  border: 2px solid hsl(354, 100%, 66%);
 }
 
 .hover\:bg-\[\#7195f5\]:hover {

@@ -1,6 +1,9 @@
 "use strict";
 
 const formControl = document.querySelector("#email-form");
+const errorMessage = document.querySelector(".error-message");
+const errorMessageInvalid = document.querySelector(".error-message-invalid");
+const inputField = document.querySelector('input[type="email"]');
 
 formControl.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -10,7 +13,13 @@ formControl.addEventListener("submit", function (e) {
 
 function validateEmail(email_id) {
   if (email_id === "" || email_id === null) {
-    alert("Email field cannot be empty!. 🚫");
+    errorMessage.classList.remove('hidden');
+    inputField.classList.add('error-border');
+    setTimeout(function(){
+      errorMessage.classList.add('hidden');
+      inputField.classList.remove('error-border');
+
+    },3000)
     return;
   }
 
@@ -20,6 +29,11 @@ function validateEmail(email_id) {
   if (regex_pattern.test(email_id)) {
     alert("Thank you. You have subscribed successfully. ☑");
   } else {
-    alert("Please enter a valid email! 🚫");
+    errorMessageInvalid.classList.remove('hidden');
+    inputField.classList.add('error-border');
+    setTimeout(function(){
+      errorMessageInvalid.classList.add('hidden');
+      inputField.classList.remove('error-border');
+    },3000)
   }
 }
