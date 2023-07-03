@@ -1,34 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  We are launching soon!
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="grid place-content-center min-h-screen text-xl">
+    <main
+      class="flex flex-col w-[340px] lg:w-[650px] p-4 items-center justify-center"
+    >
+      <img src="images/logo.svg" alt="ping logo" class="mb-8" />
+      <h1 class="text-2xl text-Gray font-light mb-4">
+        We are launching <strong class="text-black font-bold">soon!</strong>
+      </h1>
+      <p class="text-sm mb-8">Subscribe and get notified</p>
 
-  Subscribe and get notified
+      <form action="">
+        <fieldset>
+          <div class="lg:flex justify-center items-center">
+            <legend>
+              <input
+                type="email"
+                placeholder="Your email address..."
+                class="placeholder-PaleBlue font-semibold leading-normal text-[0.875rem] lg:text-xl rounded-full py-3 pr-24 pl-4 border border-PaleBlue mb-3 text-left outline-BlueColor"
+              />
+            </legend>
+            <button
+              class=" rounded-full py-3 px-16 mb-[64px] lg:mb-auto lg:ml-2 border-none bg-BlueColor text-white font-semibold w-full block"
+            >
+              Notify Me
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      <img
+        src="images/illustration-dashboard.png"
+        alt="illustration-dashboard"
+      />
 
-  Notify Me
+      <div
+        class="flex justify-center gap-4 w-full items-center m-12 lg:justify-center lg:gap-10"
+      >
+        <img
+          src="images/facebook.svg"
+          alt="facebook logo"
+          class="w-[13.18px] h-[25.40px]"
+        />
+        <img src="images/twitter.svg" alt="twitter logo" class="w-[25.79px] h-[20.635px]" />
+        <img src="images/instagram.svg" alt="instagram logo" class="w-[25.70px] h-[25.70px]" />
+      </div>
 
-  &copy; Copyright Ping. All rights reserved.
+      <footer class="text-Gray text-sm ">&copy; Copyright Ping. All rights reserved.</footer>
+    </main>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">MKF</a>
+      </p>
+    </footer> -->
+  </body>
 </html>
