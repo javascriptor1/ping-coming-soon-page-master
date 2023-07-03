@@ -554,10 +554,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -714,6 +710,7 @@ video {
   align-items: center;
   justify-content: center;
   fill: #4f7df3;
+  cursor: pointer;
 }
 
 .social-media-div:hover {
