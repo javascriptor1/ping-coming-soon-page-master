@@ -554,32 +554,8 @@ video {
   display: grid;
 }
 
-.h-\[20\.635px\] {
-  height: 20.635px;
-}
-
-.h-\[25\.40px\] {
-  height: 25.40px;
-}
-
-.h-\[25\.70px\] {
-  height: 25.70px;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-\[13\.18px\] {
-  width: 13.18px;
-}
-
-.w-\[25\.70px\] {
-  width: 25.70px;
-}
-
-.w-\[25\.79px\] {
-  width: 25.79px;
 }
 
 .w-\[340px\] {
@@ -590,14 +566,8 @@ video {
   width: 100%;
 }
 
-.scale-75 {
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 .flex-col {
@@ -732,17 +702,24 @@ video {
   outline-color: hsl(223, 87%, 63%);
 }
 
-svg:hover {
-  fill: red;
+.social-media-div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #4f7df3;
+}
+
+.social-media-div:hover {
+  background-color: #4f7df3;
+  fill: white;
 }
 
 .hover\:bg-\[\#7195f5\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(113 149 245 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-gray-50:hover {
-  fill: #f9fafb;
 }
 
 @media (min-width: 1024px) {

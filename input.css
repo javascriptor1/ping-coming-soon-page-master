@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.social-media-div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #4f7df3;
+}
 
-
-svg:hover {
-    fill: red;
+.social-media-div:hover {
+  background-color: #4f7df3;
+  fill: white;
 }
